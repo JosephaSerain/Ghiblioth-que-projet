@@ -48,4 +48,14 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/listes/4
+DELETE http://localhost:3000/listes/5
+
+###
+PATCH http://localhost:3000/listes/5
+Content-Type: application/json
+
+{
+
+    "name" : "Films que je n'ai pas apprécié"
+    
+}

@@ -1,0 +1,39 @@
+/* Header.css */
+
+.headerContainer {
+    width: 100%;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    display: flex;
+    flex-direction: column; /* Garde la direction en colonne pour le h1 */
+    align-items: center; /* Centre horizontalement */
+}
+
+.main-site-title {
+    margin-bottom: 2rem; /* Ajuste l'espace entre le h1 et le conteneur intro */
+    font-size: 3rem;;
+}
+
+.introContainer {
+    display: flex; /* Utilise flex pour aligner horizontalement */
+    flex-direction: row; /* Définit la direction en ligne */
+    width: 100%; /* Assure que le conteneur prend toute la largeur */
+    max-width: 1500px; /* Optionnel : limite la largeur maximale */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Aligne verticalement les éléments */
+}
+
+.studioIntro {
+    width: 50%; /* Prend la moitié de l'espace */
+    padding: 1rem; /* Optionnel : ajoute un peu de remplissage */
+}
+
+.presentationImg {
+    width: 50%; /* Prend la moitié de l'espace */
+}
+
+.presentationImg img {
+    width: 100%; /* Assure que l'image remplit son conteneur */
+    height: auto; /* Garde le ratio de l'image */
+}

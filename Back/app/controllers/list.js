@@ -58,3 +58,22 @@ export async function removeList (req, res){
 };
 
 //Fonction pour modifier une liste
+export async function modifyList (req, res){
+    try{
+        const listId = req.params.id;
+        const {name} = req.body
+
+        const list = await List.findByPk(listId);
+         if(!list){
+            return res.status(404).json({message : 'Erreur, cette liste est introuvable'})
+        };
+
+        list.name = name;
+        await list.save();
+
+        res.status(204).json(list);
+    } catch (error){
+        console.error('Erreur lors de la modification de la liste:', error);
+        res.status(500).json({message : 'Erreur serveur lors de la modification de la liste'});
+    };
+};

@@ -42,3 +42,5 @@ router.get('/listes/:id/films', listMovieController.getMovieOfList);
 router.post ('/listes', listController.addList);
 //Rote pour supprimer une liste
 router.delete('/listes/:id', listController.removeList);
+//Route pour modifier une liste
+router.patch ('/listes/:id', listController.modifyList);

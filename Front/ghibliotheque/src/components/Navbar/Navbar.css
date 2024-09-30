@@ -1,0 +1,43 @@
+/* Styles pour la barre de navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: 4rem;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: white;
+   height: fit-content;
+    
+  }
+  
+  .navItems {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    margin-right: 2rem;
+  }
+  
+  .navItem {
+    font-size: 1rem;
+  }
+  
+  .link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    color: #ff6347; /* Changer la couleur au survol */
+  }
+  
