@@ -1,0 +1,51 @@
+GET http://localhost:3000/films
+
+###
+GET http://localhost:3000/films/12
+
+### 
+GET http://localhost:3000/genre
+
+###
+GET http://localhost:3000/genre/4
+
+###
+GET  http://localhost:3000/genre/1/films
+
+###
+
+GET http://localhost:3000/realisateurs
+
+###
+GET http://localhost:3000/realisateurs/1
+
+###
+GET http://localhost:3000/realisateurs/1/films
+
+###
+GET http://localhost:3000/listes
+
+###
+GET http://localhost:3000/listes/2
+
+###
+PUT http://localhost:3000/listes/2/films/3
+
+###
+DELETE http://localhost:3000/listes/2/films/16
+
+###
+GET http://localhost:3000/listes/2/films
+
+### 
+POST http://localhost:3000/listes
+Content-Type: application/json
+
+{
+
+    "name" : "Pas aimés"
+    
+}
+
+###
+DELETE http://localhost:3000/listes/4
