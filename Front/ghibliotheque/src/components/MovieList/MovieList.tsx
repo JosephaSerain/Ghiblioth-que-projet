@@ -8,6 +8,7 @@ type TMovie = {
     name: string;
     date: number;
     resume: string;
+    image: string;
     bande_annonce: string 
 };
 

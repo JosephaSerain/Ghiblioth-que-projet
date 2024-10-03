@@ -25,6 +25,11 @@ Movie.init({
     resume:{
         type: DataTypes.TEXT
     },
+    image:{
+        type: DataTypes.STRING,
+        allowNull: false
+
+    },
     bande_annonce:{
         type: DataTypes.STRING(255)
     }

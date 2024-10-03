@@ -7,6 +7,7 @@ CREATE TABLE "movie" (
   "name" VARCHAR(255) NOT NULL UNIQUE,
   "date" INTEGER NOT NULL,
   "resume" TEXT NOT NULL,
+  "image" VARCHAR(255) NOT NULL,
   "bande_annonce" VARCHAR(255)  
 );
 
