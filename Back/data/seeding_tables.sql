@@ -52,15 +52,15 @@ VALUES
 SELECT setval('movie_id_seq', (SELECT MAX(id) from "movie"));
 
 INSERT INTO "director"
-  ("name")
+  ("name", "image")
 VALUES
-  ('Hayao Miyazaki'),
-  ('Isao Takahata'),
-  ('Tomomi Mochizuki'),
-  ('Yoshifumi Kondo'),
-  ('Goro Miyazaki'),
-  ('Hiromasa Yonebayashi'),
-  ('Hiroyuki Morita')
+  ('Hayao Miyazaki', 'https://static.euronews.com/articles/stories/08/30/05/18/1200x675_cmsv2_79166748-9efd-5333-8740-797bc205849e-8300518.jpg'),
+  ('Isao Takahata', 'https://i0.wp.com/seriesdefilms.com/wp-content/uploads/2018/04/isao_takahata.jpg?fit=928%2C523&ssl=1'),
+  ('Tomomi Mochizuki', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfvxozw3rtFkPqqOBpFH-hV0jrKDzRh01QCw&s'),
+  ('Yoshifumi Kondo', 'https://meijibunka.wordpress.com/wp-content/uploads/2018/06/yoshifumi-kondo.jpg?w=584'),
+  ('Goro Miyazaki','https://d27csu38upkiqd.cloudfront.net/eyJidWNrZXQiOiJmZGMtc2l0ZXB1YmxpYy1tZWRpYS1wcm9kIiwia2V5IjoidXBsb2Fkc1wvMjAyNFwvMDVcLzAwMF8zNHRkNnB5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTM2MCwiaGVpZ2h0Ijo3NjUsImZpdCI6ImNvdmVyIn19fQ=='),
+  ('Hiromasa Yonebayashi','https://www.kanpai.fr/sites/default/files/styles/og/public/hiromasa-yonebayashi.jpg'),
+  ('Hiroyuki Morita','https://www.buta-connection.net/images/images_films/neko-no-ongaeshi-production-conference-de-presse-hiroyuki-morita.jpg')
 ;
 
 INSERT INTO "list"
