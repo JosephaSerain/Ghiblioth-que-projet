@@ -95,12 +95,12 @@ h2 {
     margin-top: 6rem;
     font-size: 2rem;
 }
-#sort{
+#type-filter{
     margin-left: 80%;
     background-color: #688b5b;
     color: white;
     padding: 0.2rem;
-    border-radius: 10%;
+    border-radius: 1rem;
 }
 
 .card-container {
@@ -128,7 +128,7 @@ h2 {
     max-height: 200px;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    border-radius: 6%;
+    border-radius: 1rem;
 }
 
 .card a {
@@ -136,7 +136,7 @@ h2 {
     margin-bottom: 3rem;
     background-color: #688b5b82 ;
     padding: 0.8rem;
-    border-radius: 20%;
+    border-radius: 1rem;
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -187,7 +187,7 @@ h2 {
 .button{
     background-color: #688b5b ;
     padding: 0.8rem;
-    border-radius: 20%;
+    border-radius: 1rem;
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -249,6 +249,7 @@ h2 {
     border-radius: 10%;
     padding: 1rem;
     min-height: 25rem;
+    
 }
 
 #signIn-form h2{
@@ -259,6 +260,7 @@ h2 {
 #signIn-form input{
     border: none;
     margin: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 #signIn-form label{
@@ -272,7 +274,7 @@ h2 {
     margin: auto;
     background-color:#0798C3 ;
     border: none;
-    border-radius: 10%;
+    border-radius: 1rem;
     color: white;
 }
 
@@ -297,14 +299,19 @@ h2 {
 .list-container{
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+
 }
 
 .list{
     width: 25%;
     height: 600px;
     background-color: #688b5b;
-    margin-top: 10%;
-    margin-left: 5%;
     border-radius: 10%;
     display: flex;
     flex-direction: column;
@@ -338,12 +345,13 @@ h2 {
     background-color: #a3c996;
     height: fit-content;
     position: relative;
-    border-radius: 10%;
+    border-radius: 1rem;
     justify-items: center;
     padding: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 1rem;
 
     
 }
@@ -398,3 +406,4 @@ h4{
     font-size: 1rem;
     
 }
+
