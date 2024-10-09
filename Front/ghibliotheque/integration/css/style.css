@@ -337,7 +337,9 @@ h2 {
     flex-direction: column;
     flex-wrap: nowrap;
 }
-
+.expand-button{
+    display: none;
+}
 .list-icon{
     height: 10%;
     display: flex;
@@ -569,4 +571,60 @@ h4{
         width: 35%;
         height: 2rem;
     }
+
+    /*Media query tablette pour la page des listes*/
+
+    .list-container{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 8rem;
+    
+    }
+
+    .list{
+        width: 90%;
+        background-color: #688b5b;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .expandable-list {
+        width: 90%; /* Largeur initiale */
+        height: 150px; /* Hauteur initiale */
+        overflow: hidden; /* Cache le contenu dépassant */
+        transition: all 0.3s ease; /* Animation douce */
+    }
+    
+    .movie-list-container {
+        display: none; /* Caché par défaut */
+    }
+    
+    .expandable-list.expanded {
+        width: 90%; /* Largeur étendue */
+        height: fit-content; /* Hauteur automatique */
+    }
+    
+    .expandable-list.expanded .movie-list-container {
+        display: block; /* Affiché quand étendu */
+    }
+
+    .expand-button{
+        width: 20%;
+        display: block;
+        margin: auto;
+        border: none;
+        background-color: #a3c996;
+        color: white;
+        border-radius: 0.5rem;
+
+    }
+
+
+
 }

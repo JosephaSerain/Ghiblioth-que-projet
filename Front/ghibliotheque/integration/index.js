@@ -43,4 +43,30 @@ document.addEventListener('DOMContentLoaded', function(){
         visibleCards.forEach(card => cardContainer.appendChild(card));
     });
 });
- 
+
+document.addEventListener('DOMContentLoaded', function() {
+  const expandableLists = document.querySelectorAll('.expandable-list');
+
+  expandableLists.forEach(list => {
+      const expandButton = list.querySelector('.expand-button');
+      const movieListContainer = list.querySelector('.movie-list-container');
+      const initialHeight = list.offsetHeight;
+
+      expandButton.addEventListener('click', function() {
+          list.classList.toggle('expanded');
+
+          if (list.classList.contains('expanded')) {
+              expandButton.textContent = 'Voir moins';
+              movieListContainer.style.display = 'block';
+              list.style.height = list.scrollHeight + 'px';
+          } else {
+              expandButton.textContent = 'Voir plus';
+              list.style.height = initialHeight + 'px';
+              // Utiliser setTimeout pour permettre l'animation avant de cacher le contenu
+              setTimeout(() => {
+                  movieListContainer.style.display = 'none';
+              }, 300); // 300ms correspond à la durée de la transition CSS
+          }
+      });
+  });
+});
