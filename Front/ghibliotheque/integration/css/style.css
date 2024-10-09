@@ -537,4 +537,36 @@ h4{
     }
 
     /* Media Query tablette pour la page réalisateurs déjà ok*/
+    /* Media Query pour tablette pour la page de connexion*/
+
+    .formulaire-inscription{
+        margin: 5rem;
+        margin-top: 8rem;
+    
+    }
+
+    .petite-image-ghibli img{
+        width: 18rem;
+        position: absolute;
+        top: 30%;
+        right: 2%;
+    }
+
+    #signIn-form{
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        margin: auto;
+        background-color: #237590;
+        border-radius: 10%;
+        padding: 1rem;
+        min-height: 20rem;
+        
+        
+    }
+
+    #login-button{
+        width: 35%;
+        height: 2rem;
+    }
 }
