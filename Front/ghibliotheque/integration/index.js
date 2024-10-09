@@ -7,6 +7,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const burgerMenu = document.querySelector('.burger-menu');
+  const navList = document.querySelector('.nav-list');
+
+  if (burgerMenu && navList) {
+      burgerMenu.addEventListener('click', function() {
+          navList.classList.toggle('active');
+          this.classList.toggle('active');
+      });
+  } else {
+      console.error('Burger menu or navigation list not found');
+  }
+});
+
 document.addEventListener('DOMContentLoaded', function(){
     const typeFilter = document.getElementById('type-filter');
     const cards = document.querySelectorAll('.card');
@@ -29,4 +43,4 @@ document.addEventListener('DOMContentLoaded', function(){
         visibleCards.forEach(card => cardContainer.appendChild(card));
     });
 });
-    
+ 

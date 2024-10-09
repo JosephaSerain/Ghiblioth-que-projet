@@ -1,11 +1,11 @@
 /* Styles généraux ou de base */
 body {
     min-height: 100vh;
-    background-color: white; /* Fond blanc par défaut */
+    background-color: white;
     position: relative;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Empêche le défilement horizontal */
+    overflow-x: hidden;
 }
 
 .diagonal-background {
@@ -14,51 +14,70 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #0797c377; /* Couleur pour la page des films */
+    background-color: #0797c377;
     clip-path: polygon(
-      66.67% 0%, /* Point de départ à 2/3 de la largeur en haut */
-      100% 0, /* Coin supérieur droit */
-      100% 100%, /* Coin inférieur droit */
-      33.33% 100% /* Point d'arrivée à 1/3 de la largeur en bas */
+      66.67% 0%,
+      100% 0,
+      100% 100%,
+      33.33% 100%
     );
     z-index: -1;
 }
 
 .film-page .diagonal-background {
-    background-color: #688b5b8c; /* Couleur pour la page des films */
+    background-color: #688b5b8c;
 }
 
 nav {
-    padding: 20px; /* Ajoute de l'espace autour de la barre de navigation */
+    padding: 20px;
     position: fixed;
     top: 0;
-    
+    width: 100%;
+    z-index: 1000;
 }
 
-.nav-list-item {
+.nav-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: nowrap;
     padding: 0;
-    margin: 0; /* Enlève la marge par défaut */
-    width: 100%; /* Assure que la liste prend toute la largeur disponible */
+    margin: 0;
+    width: 100%;
 }
 
 .nav-item {
     list-style-type: none;
-    margin: 0 30px; /* Ajoute un peu d'espace entre les éléments */
+    margin: 0 30px;
 }
 
 .nav-item a {
     text-decoration: none;
-    color: #333; /* Couleur du texte, à ajuster selon vos besoins */
+    color: #333;
 }
 
 .nav-item a:hover {
     text-decoration: underline;
     transition: 0.5s ease;
 }
+
+/* Styles pour le menu burger */
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background: #333;
+    transition: all 0.3s ease;
+}
+
 
 .logo-ghibli {
     width: 63vw;
@@ -407,3 +426,54 @@ h4{
     
 }
 
+/*Media query telephone*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .burger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    .logo-ghibli{
+        margin-top: 20%;
+    }
+
+    .presentation-container {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        
+    }
+}
