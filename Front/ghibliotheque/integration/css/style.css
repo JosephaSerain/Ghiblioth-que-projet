@@ -171,6 +171,7 @@ h2 {
 
 .One-film-page{
     background-image: url(https://ekladata.com/sDjW7McpmSVB9l07pz9UvwE6r-U.jpg);
+    background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 0.779); /* Blanc avec 50% d'opacité */
     background-blend-mode: overlay;
 }
@@ -494,5 +495,44 @@ h4{
 
     .card{
         width: 40%;
+    }
+
+    .name-date{
+        position: absolute;
+        left: 7%;
+        top: 15%;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: end;
+    }
+
+    .central-image img {
+        max-height: 500px;
+        margin: auto;
+        position: absolute;
+        left: 20%;
+        top: 40%;
+    }
+
+    #bande-annonce{
+        position: absolute;
+        top: 25%;
+        left: 20%;
+    }
+
+    .presentation-film{
+        position: absolute;
+        right: 2%;
+        top: 32%;
+        width: 17rem;
+        color: white;
+    }
+
+    #come-back{
+        position: absolute;
+        top: 60%;
+        right: 15%;
     }
 }
