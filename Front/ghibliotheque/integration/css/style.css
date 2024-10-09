@@ -108,7 +108,7 @@ nav {
 
 
 
-/* Styles pour la page de films */
+/* Styles pour la page des films */
 h2 {
     text-align: center;
     margin-top: 6rem;
@@ -426,7 +426,7 @@ h4{
     
 }
 
-/*Media query telephone*/
+/*Media query tablette*/
 
 @media (min-width: 481px) and (max-width: 768px) {
     .burger-menu {
@@ -482,5 +482,17 @@ h4{
     .presentation-studio{
         width: 90%;
         text-align: center;
+    }
+
+    /*Media query pour tablette de la page des films*/
+
+    #type-filter{
+        margin-left: 70%;
+        margin-top: 8%;
+
+    }
+
+    .card{
+        width: 40%;
     }
 }
