@@ -442,7 +442,7 @@ h4{
 
 /*Media query tablette*/
 
-@media (min-width: 481px) and (max-width: 839px) {
+@media (min-width: 642px) and (max-width: 839px) {
     .burger-menu {
         display: block;
     }
