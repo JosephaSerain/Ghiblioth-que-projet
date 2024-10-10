@@ -608,6 +608,13 @@ h4{
         flex-direction: column;
         flex-wrap: nowrap;
     }
+
+    .list-icon img{
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-inline: 0.3rem;
+        
+    }
     .expandable-list {
         width: 90%; /* Largeur initiale */
         height: 150px; /* Hauteur initiale */
@@ -638,6 +645,36 @@ h4{
         border-radius: 0.5rem;
 
     }
+
+    .movie-list-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        flex-grow: 1;
+        overflow-y: auto;
+        margin-top:3rem;
+    
+    }
+
+    .movie-inList-card{
+        width: 90%;
+        background-color: #a3c996;
+        height: fit-content;
+        position: relative;
+        border-radius: 1rem;
+        margin: auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1rem;
+    
+        
+    }
+
+    
+  
 
 
 
