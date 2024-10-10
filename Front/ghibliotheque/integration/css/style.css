@@ -678,7 +678,7 @@ h4{
 
 /* Media Query pour les téléphones*/
 
-@media (min-width: 400px) and (max-width: 641px){
+@media (min-width: 350px) and (max-width: 641px){
     .burger-menu {
         display: block;
     }
@@ -735,6 +735,24 @@ h4{
         width: 80%;
        
         text-align: center;
+        
+    }
+
+    /*Media query pour mobile de la page des films*/
+
+    #type-filter{
+        margin-left: 60%;
+        margin-top: 8%;
+        width: 7rem;
+
+    }
+
+    h2{
+        font-size: 1.8rem;
+    }
+
+    .card{
+        width: 70%;
         
     }
 
