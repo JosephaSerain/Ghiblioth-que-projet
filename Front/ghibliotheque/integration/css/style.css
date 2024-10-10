@@ -180,6 +180,7 @@ h2 {
 .One-film-page{
     background-image: url(https://ekladata.com/sDjW7McpmSVB9l07pz9UvwE6r-U.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-color: rgba(255, 255, 255, 0.779); /* Blanc avec 50% d'opacité */
     background-blend-mode: overlay;
 }
@@ -753,6 +754,174 @@ h4{
 
     .card{
         width: 70%;
+        
+    }
+
+    /*Media Query pour la page d'un film*/
+    .name-date{
+        position: absolute;
+        left: 5%;
+        top: 15%;
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: end;
+    }
+
+    .central-image img {
+        max-height: 300px;
+        margin: auto;
+        position: absolute;
+        left: 10%;
+        top: 60%;
+    }
+
+    #bande-annonce{
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        width: 9rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .presentation-film{
+        position: absolute;
+        border-radius: 1rem;
+        padding: 1rem;
+        right: 20%;
+        top: 32%;
+        width: 17rem;
+        color: white;
+        background-color: #33333365;
+    }
+
+    #come-back{
+        position: absolute;
+        top: 60%;
+        right: 5%;
+        font-size: 0.8rem;
+    }
+
+    /* Media Query pour tablette pour la page de connexion*/
+
+    .formulaire-inscription{
+        margin: 2rem;
+        margin-top: 10rem;
+    
+    }
+
+    .petite-image-ghibli img{
+        width: 20rem;
+        position: absolute;
+        top: 45%;
+        right: 2%;
+    }
+
+    #signIn-form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        background-color: #237590;
+        border-radius: 10%;
+        padding: 1rem;
+        min-height: 20rem;
+        
+        
+    }
+
+    #login-button{
+        width: 35%;
+        height: 2rem;
+    }
+
+    /*Media query tablette pour la page des listes*/
+
+    .list-container{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 8rem;
+    
+    }
+
+    .list{
+        width: 90%;
+        background-color: #688b5b;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-bottom: 2rem;
+    }
+
+    .list-icon img{
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-inline: 0.3rem;
+        
+    }
+    .expandable-list {
+        width: 90%; /* Largeur initiale */
+        height: 150px; /* Hauteur initiale */
+        overflow: hidden; /* Cache le contenu dépassant */
+        transition: all 0.3s ease; /* Animation douce */
+    }
+    
+    .movie-list-container {
+        display: none; /* Caché par défaut */
+    }
+    
+    .expandable-list.expanded {
+        width: 90%; /* Largeur étendue */
+        height: fit-content; /* Hauteur automatique */
+    }
+    
+    .expandable-list.expanded .movie-list-container {
+        display: block; /* Affiché quand étendu */
+    }
+
+    .expand-button{
+        width: 20%;
+        display: block;
+        margin: auto;
+        border: none;
+        background-color: #a3c996;
+        color: white;
+        border-radius: 0.5rem;
+
+    }
+
+    .movie-list-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        flex-grow: 1;
+        overflow-y: auto;
+        margin-top:3rem;
+    
+    }
+
+    .movie-inList-card{
+        width: 90%;
+        background-color: #a3c996;
+        height: fit-content;
+        position: relative;
+        border-radius: 1rem;
+        margin: auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1rem;
+    
         
     }
 
