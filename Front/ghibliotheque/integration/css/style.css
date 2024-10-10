@@ -140,6 +140,7 @@ h2 {
     align-items: center;
     margin: 2rem;
     min-height: 400px;
+    position: relative;
 }
 
 .card img {
@@ -151,15 +152,22 @@ h2 {
 }
 
 .card a {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    
+    margin-bottom: 1rem;
     background-color: #688b5b82 ;
     padding: 0.8rem;
     border-radius: 1rem;
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
+    position: absolute;
+    bottom: 3rem;
 
+}
+
+.card h3{
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .card a:hover{
@@ -251,24 +259,27 @@ h2 {
 .petite-image-ghibli img{
     width: 25rem;
     position: absolute;
-    top: 35%;
+    top: 45%;
     right: 2%;
 }
 
 .formulaire-inscription{
     margin: 10rem;
+    margin-top: 15rem;
+   
 
 }
 
 #signIn-form{
     display: flex;
     flex-direction: column;
-    width: 35%;
+    max-width: 40rem;
     margin: auto;
     background-color: #237590;
     border-radius: 10%;
     padding: 1rem;
     min-height: 25rem;
+    
     
 }
 
@@ -431,7 +442,7 @@ h4{
 
 /*Media query tablette*/
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 839px) {
     .burger-menu {
         display: block;
     }
@@ -497,7 +508,10 @@ h4{
 
     .card{
         width: 40%;
+        
     }
+
+    
 
     .name-date{
         position: absolute;
@@ -543,21 +557,21 @@ h4{
 
     .formulaire-inscription{
         margin: 5rem;
-        margin-top: 8rem;
+        margin-top: 20rem;
     
     }
 
     .petite-image-ghibli img{
-        width: 18rem;
+        width: 22rem;
         position: absolute;
-        top: 30%;
+        top: 40%;
         right: 2%;
     }
 
     #signIn-form{
         display: flex;
         flex-direction: column;
-        width: 55%;
+        width: 65%;
         margin: auto;
         background-color: #237590;
         border-radius: 10%;
