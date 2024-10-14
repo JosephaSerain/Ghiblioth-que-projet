@@ -213,6 +213,16 @@ h2 {
     top: 24%;
 }
 
+#add-to{
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    border: none;
+    border-radius: 1rem;
+    background-color: #688b5b;
+    color: #fff;
+}
+
 .button{
     background-color: #688b5b ;
     padding: 0.8rem;
@@ -676,6 +686,77 @@ h4{
 
 
 }
+@media (min-width: 840px) and (max-width: 1372px){
+    .name-date{
+        position: absolute;
+        left: 10%;
+        top: 15%;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: end;
+    }
+    
+    .date{
+        font-size: 1.3rem;
+    }
+    
+    .central-image img {
+        max-height: 500px;
+        margin: auto;
+        position: absolute;
+        left: 20%;
+        top: 40%;
+    }
+    
+    #add-to{
+        position: absolute;
+        right: 20%;
+        top: 20%;
+        border: none;
+        border-radius: 1rem;
+        background-color: #688b5b;
+        color: #fff;
+    }
+    
+    .button{
+        background-color: #688b5b ;
+        padding: 0.8rem;
+        border-radius: 1rem;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        
+    }
+    
+    #bande-annonce{
+        position: absolute;
+        top: 30%;
+        left: 15%;
+    }
+    
+    .button:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .presentation-film{
+        position: absolute;
+        right: 7%;
+        top: 30%;
+        width: 17rem;
+        color: white;
+    }
+    
+    #come-back{
+        position: absolute;
+        top: 65%;
+        right: 10%;
+    }
+
+
+}
 
 /* Media Query pour les téléphones*/
 
@@ -786,6 +867,16 @@ h4{
         text-align: center;
     }
 
+    #add-to{
+        position: absolute;
+        right: 20%;
+        top: 55%;
+        border: none;
+        border-radius: 1rem;
+        background-color: #688b5b;
+        color: #fff;
+    }
+
     .presentation-film{
         position: absolute;
         border-radius: 1rem;
@@ -799,7 +890,7 @@ h4{
 
     #come-back{
         position: absolute;
-        top: 60%;
+        top: 65%;
         right: 5%;
         font-size: 0.8rem;
     }
